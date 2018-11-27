@@ -1,13 +1,11 @@
 #include <stdio.h>
-//getting user input
+/*getting user input*/
 
-int megl;
+char megl[64];
 
 int main(){
 printf("type something!\n");
-megl = getchar();
-printf("you entered: ");
-putchar(megl);
-printf("\n");
+fgets(megl,64,stdin);
+printf("you entered: %s \n",megl);
 return 0;
 }
